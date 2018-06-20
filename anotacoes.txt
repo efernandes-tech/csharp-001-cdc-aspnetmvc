@@ -1,8 +1,14 @@
 # csharp-001-cdc-aspnetmvc
 
+#### Anotações:
+- Fontes:
+    https://github.com/marcioalthmann/DesenvolvimentoComAspNetMvc
+
 #### Anotações do Livro:
 
 1.1 e entao vamos comecar
     - Primeira aplicação.
 
-pg 66
+
+
+pg 86
