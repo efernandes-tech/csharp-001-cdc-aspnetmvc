@@ -6,13 +6,13 @@ using System.Web;
 
 namespace CadeMeuMedico.Models
 {
-    [MetadataType(typeof(MedicoMetadado))]
-    public partial class Medico
+    [MetadataType(typeof(MedicosMetadado))]
+    public partial class Medicos
     {
 
     }
 
-    public class MedicoMetadado
+    public class MedicosMetadado
     {
         [Required(ErrorMessage = "Obrigatório informar o CRM")]
         [StringLength(30, ErrorMessage = "O CRM deve possuir no máximo 30 caracteres")]
