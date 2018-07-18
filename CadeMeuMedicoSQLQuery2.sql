@@ -6,3 +6,5 @@ SELECT E.* FROM Especialidades E
 SELECT C.* FROM Cidades C
 
 SELECT BP.* FROM BannersPublicitarios BP
+
+SELECT U.* FROM Usuarios U

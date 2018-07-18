@@ -40,6 +40,13 @@
                         <a class="dropdown-item">@Html.ActionLink("Médicos", "Index", "Medicos")</a>
                         <a class="dropdown-item">@Html.ActionLink("Cidades", "Index", "Cidades")</a>
                         <a class="dropdown-item">@Html.ActionLink("Especialidades", "Index", "Especialidades")</a>
+                        @Html.ActionLink(
+                            "Médicos",
+                            "Index",
+                            "Medicos",
+                            null,
+                            new { @class = "dropdown-item" }
+                        )
                     </div>
                 </li>
             </ul>
