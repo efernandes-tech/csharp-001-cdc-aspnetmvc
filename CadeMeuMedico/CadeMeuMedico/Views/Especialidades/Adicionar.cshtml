@@ -4,10 +4,9 @@
     ViewBag.Title = "Adicionar";
 }
 
-<h2>Adicionar</h2>
+<h2>Adicionar Especialidade</h2>
 
-@using (Html.BeginForm()) 
-{
+@using (Html.BeginForm("Adicionar", "Especialidades", FormMethod.Post, new{@class = "form-horizontal"})) {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
@@ -33,3 +32,9 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+
+@section Scripts {
+    <script>
+        $("#menuEspecialidades").addClass("active");
+    </script>
+}

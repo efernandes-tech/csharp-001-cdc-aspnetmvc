@@ -105,7 +105,9 @@ namespace CadeMeuMedico.Repositorios
 
         public static string CriptografaSHA1(string str)
         {
+            #pragma warning disable CS0618 // O tipo ou membro é obsoleto
             return FormsAuthentication.HashPasswordForStoringInConfigFile(str, "sha1");
+            #pragma warning restore CS0618 // O tipo ou membro é obsoleto
         }
     }
 }

@@ -12,7 +12,9 @@ namespace CadeMeuMedico.Repositorios
     {
         public static bool AutenticarUsuario(string Login, string Senha)
         {
+            #pragma warning disable CS0618 // O tipo ou membro é obsoleto
             var SenhaCriptografada = FormsAuthentication.HashPasswordForStoringInConfigFile(Senha, "sha1");
+            #pragma warning restore CS0618 // O tipo ou membro é obsoleto
             try
             {
                 using (EntidadesCadeMeuMedicoBD db = new EntidadesCadeMeuMedicoBD())

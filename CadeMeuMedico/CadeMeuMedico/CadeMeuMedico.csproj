@@ -178,9 +178,11 @@
     <Compile Include="Models\BannersPublicitarios.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CidadesMetadado.cs" />
     <Compile Include="Models\Cidades.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EspecialidadesMetadado.cs" />
     <Compile Include="Models\Especialidades.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
@@ -203,6 +205,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModeloDeDados.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Pesquisa.cs" />
+    <Compile Include="Models\ResultadoPesquisa.cs" />
     <Compile Include="Models\Usuarios.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>

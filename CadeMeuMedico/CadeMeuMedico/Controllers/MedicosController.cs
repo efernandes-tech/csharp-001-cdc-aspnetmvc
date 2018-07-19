@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -24,7 +25,6 @@ namespace CadeMeuMedico.Controllers
         {
             ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
             ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
-
             return View();
         }
 
@@ -38,9 +38,8 @@ namespace CadeMeuMedico.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome");
-            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome");
-
+            ViewBag.IDCidade = new SelectList(db.Cidades, "IDCidade", "Nome", medico.IDCidade);
+            ViewBag.IDEspecialidade = new SelectList(db.Especialidades, "IDEspecialidade", "Nome", medico.IDEspecialidade);
             return View(medico);
         }
 
@@ -79,7 +78,8 @@ namespace CadeMeuMedico.Controllers
                 db.Medicos.Remove(medico);
                 db.SaveChanges();
                 return Boolean.TrueString;
-            } catch
+            }
+            catch
             {
                 return Boolean.FalseString;
             }

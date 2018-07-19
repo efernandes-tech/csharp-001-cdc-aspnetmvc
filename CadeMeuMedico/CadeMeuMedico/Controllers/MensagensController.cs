@@ -15,7 +15,7 @@ namespace CadeMeuMedico.Controllers
 
         public ActionResult BoaTarde()
         {
-            return Content("Boa tarde... não durma na mesa do trabalho!");
+            return Content("Boa tarde... não vá dormir na mesa do trabalho!");
         }
     }
 }
