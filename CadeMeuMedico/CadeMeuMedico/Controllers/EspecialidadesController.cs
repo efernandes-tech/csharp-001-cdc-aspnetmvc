@@ -8,7 +8,7 @@ using CadeMeuMedico.Models;
 
 namespace CadeMeuMedico.Controllers
 {
-    public class EspecialidadesController : Controller
+    public class EspecialidadesController : BaseController
     {
         private EntidadesCadeMeuMedicoBD db = new EntidadesCadeMeuMedicoBD();
 

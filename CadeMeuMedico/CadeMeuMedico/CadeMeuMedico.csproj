@@ -163,6 +163,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Mobile\Controllers\HomeController.cs" />
     <Compile Include="Areas\Mobile\MobileAreaRegistration.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CidadesController.cs" />
     <Compile Include="Controllers\EspecialidadesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="Controllers\MensagensController.cs" />
     <Compile Include="Controllers\TesteLayoutController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Filtros\AutorizacaoDeAcesso.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -330,6 +332,7 @@
     <Folder Include="Areas\Mobile\Models\" />
     <Folder Include="Areas\Mobile\Views\Home\" />
     <Folder Include="Areas\Mobile\Views\Shared\" />
+    <Folder Include="Views\Base\" />
     <Folder Include="Views\Mensagens\" />
     <Folder Include="Views\Usuarios\" />
   </ItemGroup>

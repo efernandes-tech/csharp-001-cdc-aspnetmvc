@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace CadeMeuMedico.Controllers
 {
-    public class UsuariosController : Controller
+    public class UsuariosController : BaseController
     {
         [HttpGet]
         public JsonResult AutenticacaoDeUsuario(string Login, string Senha)

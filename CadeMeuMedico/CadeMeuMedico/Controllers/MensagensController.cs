@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace CadeMeuMedico.Controllers
 {
-    public class MensagensController : Controller
+    public class MensagensController : BaseController
     {
         public ActionResult BomDia()
         {
